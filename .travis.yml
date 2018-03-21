@@ -6,4 +6,5 @@ services:
 install:
   - pip install -r requirements.txt
 script:
+  - echo $(pwd)
   - python -m unittest discover 
