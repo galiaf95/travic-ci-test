@@ -4,7 +4,7 @@ python:
 services:
   - mysql
 install:
-  - pip install -r requirements.txt
+  - pip install -r $TRAVIS_BUILD_DIR/requirements.txt
 script:
   - echo $(pwd)
   - python -m unittest discover 
